@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<flipper_length_mm &le; 207.0<br/>gini = 0.634<br/>samples = 145<br/>value = [106, 80, 47]>, fillcolor="#fbeadd"] ;
+1 [label=<bill_length_mm &le; 43.35<br/>gini = 0.431<br/>samples = 94<br/>value = [105, 1, 46]>, fillcolor="#f1b991"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<bill_length_mm &le; 42.4<br/>gini = 0.054<br/>samples = 64<br/>value = [105, 0, 3]>, fillcolor="#e6853f"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0<br/>samples = 56<br/>value = [95, 0, 0]>, fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label=<sex_male &le; 0.5<br/>gini = 0.355<br/>samples = 8<br/>value = [10, 0, 3]>, fillcolor="#eda774"] ;
+2 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 2<br/>value = [0, 0, 3]>, fillcolor="#8139e5"] ;
+4 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 6<br/>value = [10, 0, 0]>, fillcolor="#e58139"] ;
+4 -> 6 ;
+7 [label=<body_mass_g &le; 4587.5<br/>gini = 0.044<br/>samples = 30<br/>value = [0, 1, 43]>, fillcolor="#843ee6"] ;
+1 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 29<br/>value = [0, 0, 43]>, fillcolor="#8139e5"] ;
+7 -> 8 ;
+9 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1, 0]>, fillcolor="#39e581"] ;
+7 -> 9 ;
+10 [label=<island_Dream &le; 0.5<br/>gini = 0.048<br/>samples = 51<br/>value = [1, 79, 1]>, fillcolor="#3ee684"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label=<gini = 0.0<br/>samples = 49<br/>value = [0, 79, 0]>, fillcolor="#39e581"] ;
+10 -> 11 ;
+12 [label=<bill_depth_mm &le; 19.8<br/>gini = 0.5<br/>samples = 2<br/>value = [1, 0, 1]>, fillcolor="#ffffff"] ;
+10 -> 12 ;
+13 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0, 0]>, fillcolor="#e58139"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 1]>, fillcolor="#8139e5"] ;
+12 -> 14 ;
+}
